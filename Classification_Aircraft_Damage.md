@@ -17,24 +17,20 @@ Provided by a Roboflow user, License: CC BY 4.
 
 ## Table of Contents
 
-[1.1 Dataset Preparation](#11-dataset-preparation)
- 
-<div class="alert alert-block alert-info" style="margin-top: 20px">
-    <p><font size="5">Part 1 - Classification Problem: Classifying the defect on the aircraft as 'dent' or 'crack'</p>
-<font size="3">
-        <br>
-        2. <a href="#1.2-Data-Preprocessing">1.2 Data Preprocessing</a><br>
-        3. <a href="#1.3-Model-Definition">1.3 Model Definition</a><br>
-        4. <a href="#1.4-Model-Training">1.4 Model Training</a><br>
-        5. <a href="#1.5-Visualizing-Training-Results">1.5 Visualizing Training Results</a><br>
-        6. <a href="#1.6-Model-Evaluation">1.6 Model Evaluation</a><br>
-        7. <a href="#1.7-Visualizing-Predictions">1.7 Visualizing Predictions</a><br>
-    <br>
-<p><font size="5">Part 2: Image Captioning and Summarization using BLIP Pretrained Model</p>
-<font size="3">
-        1. <a href="#2.1-Loading-BLIP-Model">2.1 Loading BLIP Model</a><br>
-        2. <a href="#2.2-Generating-Captions-and-Summaries">2.2 Generating Captions and Summaries</a><br>
-        <br>
+#### Part 1 - Classification Problem: Classifying the defect on the aircraft as 'dent' or 'crack'
+
+[1.1 Dataset Preparation](#11-dataset-preparation)<br>
+[1.2 Data Preprocessing](#12-data-preprocessing)<br>
+[1.3 Model Definition](#13-model-definition)<br>
+[1.4 Model Training](#14-model-training)<br>
+[1.5 Visualizing Training Results](#15-visualizing-training-results)<br>
+[1.6 Model Evaluation](#16-model-evaluation)<br>
+[1.7 Visualizing Predictions](#17-visualizing-predictions)<br>
+
+#### Part 2: Image Captioning and Summarization using BLIP Pretrained Model</p>
+
+[2.1 Loading BLIP Model](#21-loading-blip-model)<br>
+[2.2 Generating Captions and Summaries](#22-generating-captions-and-summaries)<br>
 
 ### Task List
 To achieve the above objectives, you will complete the following tasks:
@@ -104,6 +100,26 @@ tf.random.set_seed(seed_value)
 
 # 1.1-Dataset-Preparation
 
+Define configuration options
+>Batch size is set to 32. Number of epcohs is 5.
+```
+#Set the batch size,epochs
+batch_size = 32
+n_epochs = 5
+img_rows, img_cols = 224, 224
+input_shape = (img_rows, img_cols, 3)
+```
 
+Extract the Dataset, creating directories for training, testing, and validation splits.
+
+![image](https://github.com/user-attachments/assets/4fdac2f0-4aaa-4644-b4ae-851cd37324cb)
+
+```
+# Define directories for train, test, and validation splits
+extract_path = "aircraft_damage_dataset_v1"
+train_dir = os.path.join(extract_path, 'train')
+test_dir = os.path.join(extract_path, 'test')
+valid_dir = os.path.join(extract_path, 'valid')
+```
 
 # 1.2-Data-Preprocessing
