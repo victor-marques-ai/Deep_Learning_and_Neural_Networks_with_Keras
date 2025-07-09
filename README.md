@@ -25,7 +25,9 @@ Through this course, I deepened my understanding of key deep learning concepts, 
     
 ✅ Use pretrained models for transfer learning  
 
-✅ Complete a capstone project on image classification and captioning
+✅ A project on image classification and captioning
+
+   - Classification and Captioning Aircraft Damage Using Pretrained Models
 
 ---
 
