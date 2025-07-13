@@ -1,15 +1,16 @@
-# ![image](https://github.com/user-attachments/assets/a46fac29-ca30-41d5-ba8d-4af4b3ace1c0) Deep Learning with [Keras](https://keras.io/)
+# ![image](https://github.com/user-attachments/assets/a46fac29-ca30-41d5-ba8d-4af4b3ace1c0) Deep Learning | [Keras](https://keras.io/)
 
 ### Project Repository ([IBM Course](https://www.coursera.org/programs/coursera-data-and-cybersecurity-p47a2/professional-certificates/ai-engineer)) 
 
-This repository brings the fundamentals of deep learning and practical implementation with the Keras library, through theoretical insights and hands-on labs.
+Hello there!
+In this repository, I gonna use some of the fundamentals of deep learning and practical implementation with the Keras library.
+Aiming to understand the key deep learning concepts, including forward and backpropagation, gradient descent, and activation functions, I also explored practical solutions for training deep networks, tackling issues like vanishing gradients by experimenting with different architectures and activation functions.
+Hands-on and let's code.
 
-Through this course, I deepened my understanding of key deep learning concepts, including forward and backpropagation, gradient descent, and activation functions. I also explored practical solutions for training deep networks, tackling issues like vanishing gradients by experimenting with different architectures and activation functions.
-
-> **Deep Learning and Neural Networks with Keras**
+> **Deep Learning** & **Neural Networks** | **Keras**
 
 ✅ Understand core concepts of neural networks, including:
-- Forward and backward propagation
+- Forward and [backward propagation](https://github.com/victor-marques-ai/Deep_Learning_and_Neural_Networks_with_Keras/blob/main/BackPropagation.md)
 - Gradient descent
 - Activation functions
   
